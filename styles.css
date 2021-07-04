@@ -95,13 +95,57 @@ body{
 
 .image{
     width:50%;
-    background:linear-gradient(rgba(53, 2, 119, 0.8), rgba(0, 0, 0, 0.8)), url(images/image-header-desktop.jpg)
+    background:linear-gradient(rgba(53, 2, 119, 0.8), rgba(0, 0, 0, 0.575)), url(images/image-header-desktop.jpg);
+    border-radius:20px 20px 0 0;
 }
 
 
 
+/* Mobile Phones */
 
+@media screen and (max-width:974px){
+    .card{
+        width:327px;
+        height:780px;
+        flex-direction: column;
+    }
+    .content{
+        height:75%;
+        width:100%;
+        padding:2.5rem;
+        text-align:center;
+        }
 
+    .image-mobile{
+        height:50%;
+        display:block;
+        background:linear-gradient(rgba(53, 2, 119, 0.8), rgba(0, 0, 0, 0.575)), url(images/image-header-mobile.jpg); 
+        background-position: center;
+        background-size:cover;
+        border-radius:20px 20px 0 0;
+}
+    }
+
+    .content h1{
+        font-size:1.5rem;
+        padding-bottom:1.5rem;
+    }
+
+    .content p{
+        font-size:0.8rem;
+        line-height:2;
+        padding-bottom:2rem ;
+    }
+
+    .stats{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .stat-items{
+        padding-right:0;
+        padding-bottom:2rem;
+    }
 
 
 
